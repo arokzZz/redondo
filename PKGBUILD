@@ -5,7 +5,7 @@ pkgdesc="Programa que muestra una frase aleatoria de Los Redondos"
 arch=('any')
 url="https://github.com/arokzZz/redondo.git"
 license=('GPL')
-source=()
+source=("redondo.sh" "frases.pr")
 depends=()
 build() {
     mkdir -p "$pkgdir/usr/bin"
