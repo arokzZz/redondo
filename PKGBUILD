@@ -5,12 +5,19 @@ pkgdesc="Programa que muestra una frase aleatoria de Los Redondos"
 arch=('any')
 url="https://github.com/arokzZz/redondo.git"
 license=('GPL')
-source=("redondo.sh" "frases.pr")
 depends=()
+source=("redondo" "frases.pr")
+sha256sums=('SKIP' 'SKIP')  # Si los archivos están en tu repositorio
+
+prepare() {
+  return 0
+}
+
 build() {
-    mkdir -p "$pkgdir/usr/bin"
-    mkdir -p "$pkgdir/usr/share/redondo"
-    cp redondo.sh "$pkgdir/usr/bin/"
-    chmod +x "$pkgdir/usr/bin/redondo.sh"
-    cp frases.pr "$pkgdir/usr/share/redondo/"
+  return 0
+}
+
+package() {
+  install -Dm755 "$srcdir/redondo" "$pkgdir/usr/bin/redondo"
+  install -Dm644 "$srcdir/frases.pr" "$pkgdir/usr/share/redondo/frases.pr"
 }
