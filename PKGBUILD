@@ -11,6 +11,6 @@ build() {
     mkdir -p "$pkgdir/usr/bin"
     mkdir -p "$pkgdir/usr/share/redondo"
     cp redondo.sh "$pkgdir/usr/bin/"
-    chmod +x "$pkgdir/usr/bin/redondo"
+    chmod +x "$pkgdir/usr/bin/redondo.sh"
     cp frases.pr "$pkgdir/usr/share/redondo/"
 }
