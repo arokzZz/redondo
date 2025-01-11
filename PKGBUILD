@@ -10,7 +10,7 @@ depends=()
 build() {
     mkdir -p "$pkgdir/usr/bin"
     mkdir -p "$pkgdir/usr/share/redondo"
-    cp redondo "$pkgdir/usr/bin/"
+    cp redondo.sh "$pkgdir/usr/bin/"
     chmod +x "$pkgdir/usr/bin/redondo"
     cp frases.pr "$pkgdir/usr/share/redondo/"
 }
