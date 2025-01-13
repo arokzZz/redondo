@@ -12,7 +12,7 @@ Para instalar:
 
 ```yay -S redondo```
 
-Un tip: agregalo a tu .bashrc para que cada vez que abras una terminal aparezca una frase de los redo'!
+
 
 ## Para cualquier distribucion diferente a Arch vas a tener que compilarlo, es muy sencillo:
 
